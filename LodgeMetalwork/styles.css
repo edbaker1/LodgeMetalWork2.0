@@ -1,0 +1,88 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    z-index: -1;
+    position: absolute;
+}
+.navbar-buttons {
+    z-index: 1;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(24, 92, 42, 0);
+    color: white;
+    border: 20px;
+    margin-right: 1px;
+    margin-top: 40px;
+    text-decoration: none;
+    border: none;
+    padding-top: 50px;
+    padding: 25px 100px;
+}
+.navbar-buttons:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.nav-ribbon{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    background-color: rgb(24, 92, 50, 0.7);
+    z-index: 1;
+    position: relative;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+#navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.shop-button{
+    margin-top: 335px;
+    margin-left: 635px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.shop-button:hover{
+    background-color: rgb(240, 248, 255, 0.8);
+}
+.products-text{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.l-img{
+width: "400";
+height: "300";
+}
+.p-img{
+    width: "300";
+    height: "400";
+}
+.about-me{
+    font-size: 25px;
+    padding-top: 25px;
+}

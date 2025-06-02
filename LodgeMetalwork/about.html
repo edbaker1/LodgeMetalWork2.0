@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <div id="navbar"></div>
+    
+            <script>
+              fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                  document.getElementById('navbar').innerHTML = data;
+                });
+            </script>
+        </div>
+        
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column; justify-content: centre; align-items: centre; width:600px; padding-left: 50px;">
+                <div style="display: flex; flex-direction: row; justify-content: center; padding-top: 175px;">
+                    <div style="padding-right: 25px;">
+                        <img src="Images/DSC02350.jpeg" width="275" height="400">
+                    </div>
+                    <div>
+                        <img src="Images/IMG_8978.jpg" width="275
+                        " height="400">
+                    </div>
+                    
+                </div>
+            
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: centre; width: 600px; padding-right: 50px;">
+                <div class="products-text"  style="padding-top: 25px;">
+                    About Me
+               </div>
+               <div class="about-me">
+                    Hi, my name is Ed and I'm a student studying Mechanical and Electrical Engineering at the University of Bath. I have two more years left
+                    and in September I will be going into my 3rd year. My late Grandad taught me to weld and I've loved doing it ever since.
+                    I'm now hoping to use what he has taught me to help fund my final couple of years at University. I am also a competitive track cyclist competing at an international level
+                    with the aim of hopefully being selected for Team GB and compete at the LA Olympics.
+               </div>
+                <div class="products-text" style="padding-top:50px;">
+                    What I Offer
+                </div>
+                <div class="about-me">
+                    Everything that I make I make by hand and in my spare time when I'm not studying or training. Nothing is perfect. On the Products page you will find products that I currently make and are 
+                    available to order. If there is  something that isn't on the product page but would still be interested in having it made then please
+                    don't hesitate to send me an email, it could be anything from garden furniture to fences. 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
