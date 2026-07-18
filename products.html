@@ -1,155 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="navbar"></div>
-    
-        <script>
-          fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('navbar').innerHTML = data;
-            });
-        </script>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Lodge Metalwork</title>
+  <meta name="description" content="Hand-forged steel plant supports, candle holders, boot racks and bird feeders — made to order by Lodge Metalwork." />
+  <meta name="theme-color" content="#171f26" />
 
-<div>
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="Images/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
 
-<div class="products-text" style="padding: 25px"> 
-        To place an order please email lodgemetalwork@gmail.com
-</div>
-    <div class="products-text">
-        <div>
-            Steel Plant Supports
-        </div>
-        <div>
-            Price:
-        </div>
-        <div>
-            1 Metre: £10
-        </div>
-        <div>
-            0.5 Metre: £7.50
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <div style="display: flex; flex-direction: row; justify-content: center; padding-top: 100px;">
-                <div>
-                    <img src="Images/IMG_5231.jpg" alt="support1" width="300" height="400">
-                </div>
-                <div style="padding-left: 50px; padding-right: 50px;">
-                    <img src="Images/IMG_5228.jpg" alt="support2" width="300" height="400">
-                </div>
-                <div>
-                    <img src="Images/IMG_5229.jpg" alt="support3" width="300" height="400">
-                </div>
-            </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 
-            <div style="display: flex; flex-direction: row; justify-content: center;">
-                <div>
-                    <img src="Images/IMG_5235.jpg" alt="support4" width="300" height="400">
-                </div>
-                <div style="padding-left: 50px; padding-right: 50px;">
-                    <img src="Images/IMG_5232.jpg" alt="support5" width="300" height="400">
-                </div>
-                <div>
-                    <img src="Images/IMG_5233.jpg" alt="support6" width="300" height="400">
-                </div>
-            </div>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        </div>
-    </div>
-    <div class="products-text">
-        <div style="padding-top: 50px;">
-            Steel Candle Holder
-        </div>
-        <div>
-            Price: £15
-        </div>
-        <div style="padding-top: 25px">
-            Each candle holder comes with:
-        </div>
-        <div>
-            1 x Glass Candle Dish 
-        </div>  
-        <div>  
-            1 x Citronella Tealight Candle
-        </div>
-            <div style="display: flex; flex-direction: row; justify-content: center; padding-top: 100px;">
-                <div>
-                    <img src="Images/IMG_5244.jpg" alt="support1" width="300" height="400">
-                </div>
-                <div style="padding-left: 50px; padding-right: 50px;">
-                    <img src="Images/IMG_5246.jpg" alt="support2" width="300" height="400">
-                </div>
-                <div>
-                    <img src="Images/IMG_5256.jpg" alt="support3" width="300" height="400">
-                </div>
-            </div>
+  <div id="navbar"></div>
 
-    </div>
-    <div class="products-text">
-        <div style="padding-top: 50px;">
-            Wellington Boot Holder
-        </div> 
-        <div >
-            Price:
+  <main id="main">
+    <section class="page-intro">
+      <div class="container">
+        <span class="eyebrow">Shop</span>
+        <h1>Made to order, welded by hand</h1>
+        <p>Every piece below is available to order. Fancy something that isn't listed — garden furniture, fences, brackets? Ask, it's probably possible.</p>
+        <div class="order-note">
+          To place an order, email <a href="mailto:lodgemetalwork@gmail.com">lodgemetalwork@gmail.com</a>
         </div>
-        <div >
-            1 Pair: £35
-        </div>
-        <div >
-            2 Pairs: £45
-        </div>
-        <div >
-            4 Pairs: £55
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <div style="display: flex; flex-direction: row; justify-content: center; padding-top: 100px;"> 
-                <div>
-                    <img src="Images/IMG_3326.jpeg" alt="4 pair 1" width="400" height="300">
-                </div>
-                <div style="padding-left: 50px; padding-right: 50px;">
-                    <img src="Images/IMG_3329.jpeg" alt="4 pair 2" width="300" height="400">
-                </div>
-                <div>
-                    <img src="Images/IMG_3328.jpeg" alt="4 pair 3" width="400" height="300">
-                </div>
-            </div>
+      </div>
+    </section>
 
-            <div style="display: flex; flex-direction: row; justify-content: center;">
-                <div>
-                    <img src="Images/IMG_3330.jpeg" alt="2 pair 1" width="300" height="400">
-                </div>
-                <div style="padding-right: 50px; padding-left: 50px;">
-                    <img src="Images/IMG_3331.jpeg" alt="2 pair 2" width="300" height="400">
-                </div>
-                <div>
-                    <img src="Images/IMG_3333.jpeg" alt="2 pair 3" width="300" height="400">
-                </div>
-            </div>
+    <section class="product">
+      <div class="container">
+        <div class="product-head">
+          <div>
+            <h2 class="product-name">Steel Plant Supports</h2>
+            <p class="product-desc">Solid steel supports for climbing plants and border stems, built to stand up to the weather.</p>
+          </div>
+          <ul class="price-list">
+            <li class="price-chip">1 Metre <strong>£10</strong></li>
+            <li class="price-chip">0.5 Metre <strong>£7.50</strong></li>
+          </ul>
         </div>
-    </div>
+        <div class="gallery">
+          <figure><img src="Images/web/plant-support-1.jpg" alt="Steel plant support in a garden border" loading="lazy" /></figure>
+          <figure><img src="Images/web/plant-support-2.jpg" alt="Close-up of a hand-welded steel plant support" loading="lazy" /></figure>
+          <figure><img src="Images/web/plant-support-3.jpg" alt="Steel plant support supporting climbing stems" loading="lazy" /></figure>
+          <figure><img src="Images/web/plant-support-4.jpg" alt="Steel plant support, side view" loading="lazy" /></figure>
+          <figure><img src="Images/web/plant-support-5.jpg" alt="Pair of steel plant supports in a flower bed" loading="lazy" /></figure>
+          <figure><img src="Images/web/plant-support-6.jpg" alt="Steel plant support detail" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
 
-    <div class="homepage-titles" style="display: flex; flex-direction: column; align-items: center;">
-        <div class="products-text" style="padding-top: 50px;">
-            Bird Feeder
+    <section class="product">
+      <div class="container">
+        <div class="product-head">
+          <div>
+            <h2 class="product-name">Steel Candle Holder</h2>
+            <p class="product-desc">Each holder comes complete and ready to light straight out of the box.</p>
+          </div>
+          <ul class="price-list">
+            <li class="price-chip">Includes glass dish + citronella tealight <strong>£15</strong></li>
+          </ul>
         </div>
-        <div class="products-text" style="padding-bottom: 50px;">
-            Price: £45
+        <div class="gallery">
+          <figure><img src="Images/web/candle-holder-1.jpg" alt="Steel candle holder with glass dish" loading="lazy" /></figure>
+          <figure><img src="Images/web/candle-holder-2.jpg" alt="Steel candle holder lit at dusk" loading="lazy" /></figure>
+          <figure><img src="Images/web/candle-holder-3.jpg" alt="Steel candle holder, close-up of the weld" loading="lazy" /></figure>
         </div>
-        <div style="display: flex; flex-direction: row; justify-content: centre;">
-            <div>
-                <img src="Images/IMG_3192.jpeg" alt="2 pair 1" width="300" height="400">
-            </div>
-            <div style="padding-right: 50px; padding-left: 50px;">
-                <img src="Images/IMG_3183.jpeg" alt="2 pair 2" width="300" height="400">
-            </div>
-            <div>
-                <img src="Images/IMG_3182.jpeg" alt="2 pair 3" width="170" height="400">
-            </div>
-        </div>
+      </div>
+    </section>
 
-    </div>
-    </body>
+    <section class="product">
+      <div class="container">
+        <div class="product-head">
+          <div>
+            <h2 class="product-name">Wellington Boot Holder</h2>
+            <p class="product-desc">Keep muddy boots off the floor and out of the way, in sets of two or four.</p>
+          </div>
+          <ul class="price-list">
+            <li class="price-chip">1 Pair <strong>£35</strong></li>
+            <li class="price-chip">2 Pairs <strong>£45</strong></li>
+            <li class="price-chip">4 Pairs <strong>£55</strong></li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <figure><img src="Images/web/boot-holder-1.jpg" alt="Steel Wellington boot holder, 4 pair" loading="lazy" /></figure>
+          <figure><img src="Images/web/boot-holder-2.jpg" alt="Steel Wellington boot holder holding boots" loading="lazy" /></figure>
+          <figure><img src="Images/web/boot-holder-3.jpg" alt="Steel Wellington boot holder, side view" loading="lazy" /></figure>
+          <figure><img src="Images/web/boot-holder-4.jpg" alt="Steel Wellington boot holder, 2 pair" loading="lazy" /></figure>
+          <figure><img src="Images/web/boot-holder-5.jpg" alt="Steel Wellington boot holder detail" loading="lazy" /></figure>
+          <figure><img src="Images/web/boot-holder-6.jpg" alt="Steel Wellington boot holder in a hallway" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="container">
+        <div class="product-head">
+          <div>
+            <h2 class="product-name">Bird Feeder</h2>
+            <p class="product-desc">A hand-welded steel bird feeder built to stand up outside all year round.</p>
+          </div>
+          <ul class="price-list">
+            <li class="price-chip">Bird Feeder <strong>£45</strong></li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <figure><img src="Images/web/bird-feeder-1.jpg" alt="Steel bird feeder in the garden" loading="lazy" /></figure>
+          <figure><img src="Images/web/bird-feeder-2.jpg" alt="Steel bird feeder, close-up" loading="lazy" /></figure>
+          <figure><img src="Images/web/bird-feeder-3.jpg" alt="Steel bird feeder, full view" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="main.js" defer></script>
+</body>
 </html>

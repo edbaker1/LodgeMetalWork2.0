@@ -1,28 +1,96 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    
-    <div>
-        <img class="bg-img" src="Images/IMG_5255.jpg" alt="background">  
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lodge Metalwork — Hand-forged steel homeware &amp; garden pieces</title>
+  <meta name="description" content="Lodge Metalwork makes hand-forged steel plant supports, candle holders, boot racks and bird feeders, welded to order in the UK." />
+  <meta name="theme-color" content="#171f26" />
 
-        <div>
-            <div id="navbar"></div>
-    
-            <script>
-              fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                  document.getElementById('navbar').innerHTML = data;
-                });
-            </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" href="Images/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lodge Metalwork — Hand-forged steel homeware & garden pieces" />
+  <meta property="og:description" content="Hand-forged steel plant supports, candle holders, boot racks and bird feeders, welded to order in the UK." />
+  <meta property="og:image" content="https://www.lodgemetalwork.co.uk/Images/web/hero-workshop.jpg" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="navbar"></div>
+
+  <main id="main">
+    <section class="hero">
+      <img class="hero-img" src="Images/web/hero-workshop.jpg" alt="Steel pieces being hand-forged in the Lodge Metalwork workshop" />
+      <div class="hero-scrim"></div>
+
+      <div class="hero-inner">
+        <img class="hero-mark" src="Images/icons/mark-nav.png" alt="" />
+        <p class="hero-eyebrow">Welded by hand &middot; Made to order</p>
+        <h1 class="hero-title">Hand-forged steel, built to last</h1>
+        <p class="hero-sub">Garden supports, candle holders, boot racks and bird feeders — each piece welded to order in a home workshop in the UK.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">Shop the collection</a>
+          <a href="about.html" class="btn btn-outline">Meet the maker</a>
         </div>
-    </div>
-        <div>
-            <a href="products.html" class="shop-button"> Shop Now </a> 
+      </div>
+
+      <a href="#story" class="scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16m0 0-6-6m6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <section class="section" id="story">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Lodge Metalwork</span>
+          <h2 class="section-title">Every piece welded by hand, one order at a time</h2>
+          <p class="section-lede">No factories, no mass production — just steel, a welder, and a lot of patience.</p>
         </div>
-    </body>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.5 3.5 20 9l-2 2-5.5-5.5z"/><path d="m12 6-8 8v4h4l8-8"/><path d="M3 21h6"/></svg>
+            <h3>Hand-forged</h3>
+            <p>Every item is cut, shaped and welded by hand — small imperfections included, character guaranteed.</p>
+          </div>
+          <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            <h3>Made to order</h3>
+            <p>Pieces are made once you order, so sizes and small custom requests are always worth asking about.</p>
+          </div>
+          <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.65-9.5 9-9.5 9Z"/></svg>
+            <h3>Built for the garden &amp; home</h3>
+            <p>Solid steel designed to live outside for years — plant supports, feeders and holders that earn their keep.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Have something in mind?</h2>
+          <p>Garden furniture, fences, brackets — if it can be welded, it's worth asking. Get in touch and let's talk about it.</p>
+          <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="main.js" defer></script>
+</body>
 </html>
